@@ -63,7 +63,19 @@ body {
     text-decoration: none;
     color: #433246;
     font-size: 14px;
-    /* padding: 30px 0; */
+    padding: 24px 0;
+    border-top: 4px solid transparent;
+    transition: all 0.3 color 1s;
+}
+
+.navbar__menu-title-content:hover {
+    color: #c01111;
+    border-top: 4px solid #c01111;
+}
+
+.navbar__menu-title--active .navbar__menu-title-content {
+    color: #c01111;
+    border-top: 4px solid #c01111;
 }
 
 .navbar__language-switcher {
@@ -83,12 +95,19 @@ body {
 
 .navbar__language-switcher-title-content {
     text-decoration: none;
-    color: #433246;
+    color: #949ba4;
     font-size: 14px;
+}
+
+.navbar__language-switcher-title-content:hover {
+    color: #c01111;
 }
 
 .navbar__language-switcher--active {
     color: #c01111;
+    padding: 1px 13px;
+    border: 1px solid #c01111;
+    border-radius: 5px;
 }
 
 .main {
@@ -189,13 +208,7 @@ section {
     padding-left: 0;
 }
 
-.sun-business__item--style1 {
-    color: white;
-}
 
-.sun-business__item--style2 {
-
-}
 
 .sun-business__item--style1 .sun-button {
     background-color:white;
@@ -227,12 +240,26 @@ section {
 .sun-business__item a {
     text-decoration: none;
     margin-top: 40px;
+    
 }
 
 .sun-business__btn {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sun-business__item--style1 {
+    color: white;
+}
+
+.sun-business__item--style1 .sun-business__button a:hover {
+    color: #fff;
+    background-color: #2b3441;
+}
+
+.sun-business__item--style2 {
+
 }
 
 .sun-button {
@@ -245,6 +272,7 @@ section {
     text-align: center;
     position: relative;
     z-index: 1;
+
 
 }
 
@@ -264,6 +292,11 @@ section {
 
 .sun-button--bg-black {
     background-color: #2b3441;
+}
+
+.sun-button--bg-black:hover {
+    background-color: #c01111;
+
 }
 
 .sun-button--round-large {
@@ -290,10 +323,17 @@ section {
     margin-left: 12px;
     border-radius: 50%;
     display: inline-block;
-    line-height: 20px;
+    line-height: 22px;
     text-align: center;
 }
 
+.sun-business__item--style1 .sun-business__icon {
+    background-color: rgba(192, 17, 17, 0.1);
+}
+
+.sun-business__item--style2 .sun-business__icon {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 /* Dự án */
 .sun-project {
@@ -473,6 +513,10 @@ section {
     color: #c01111;
 }
 
+.sun-button--bg-white:hover {
+    background-color: #2b3441 ;
+    color: #fff;
+}
 .sun-career__button .sun-career__icon {
     width: 24px;
     height: 24px;
@@ -627,7 +671,7 @@ section {
     border: 1px solid transparent ;
     border-radius: 8px;
     margin: 0 12px;
-    animation: slideAnimation 15s infinite;
+    animation: slideAnimation 6s infinite;
 }
 
 .event-gallery__slide:hover {
