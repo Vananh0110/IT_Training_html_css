@@ -744,6 +744,8 @@ section {
 /* FOOTER */
 footer {
     background-color: #f7f7f7;
+    padding: 0;
+    margin: 0;  
 
 }
 .footer__container {
@@ -787,6 +789,11 @@ footer {
     width: 250px;
     margin-bottom: 80px;
 
+}
+
+.footer__infor-column--nolink {
+    width: 580px;
+    margin-right: 0;
 }
 
 .footer__infor-column-title {
