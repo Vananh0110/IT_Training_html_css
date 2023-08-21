@@ -663,6 +663,7 @@ section {
     display: flex;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 
@@ -793,6 +794,7 @@ footer {
     font-weight: 700;
     font-style: normal;
     margin-bottom: 30px;
+    color: #4d5969;
 }
 
 .footer__infor-column-list {
