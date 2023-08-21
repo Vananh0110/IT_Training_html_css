@@ -112,7 +112,11 @@ main {
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+section {
+    margin-top: 150px;
 }
 
 .main-title {
@@ -204,8 +208,6 @@ main {
     z-index: 0;
 }
 
-
-
 .sun-business__title {
     font-size: 32px;
     margin-bottom: 24px;
@@ -243,10 +245,22 @@ main {
 
 }
 
+.sun-button::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+
+}
+
 
 
 .sun-button--bg-black {
-    background-color: black;
+    background-color: #2b3441;
 }
 
 .sun-button--round-large {
@@ -265,33 +279,213 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
 .sun-business__btn .sun-business__icon {
     width: 24px;
     height: 24px;
     margin-left: 12px;
     border-radius: 50%;
     display: inline-block;
-    background-color: rgba(192, 17, 17, .1);
     line-height: 20px;
     text-align: center;
-
-}
-.sun-business__btn.sun-button--bg-black .sun-button__icon {
-    background-color: rgba(255,255,255,.1);
 }
 
 
+/* Dự án */
+.sun-project {
+    
+}
+
+.sun-project-column {
+
+}
 
 
+.sun-project__counter {
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
 
-/* .fa-solid {
-    background-repeat: no-repeat;
-    background-size: cover;
+.sun-project__counter ul{
+    list-style:none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sun-project__counter li {
+    display: flex;
+    margin-bottom: 40px;
+}
+.sun-counter__number {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.sun-counter__number-complete {
+    color: #c01111;
+    font-size: 112px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.sun-counter__label {
+    color: #c01111;
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 30px;
+    position: relative;
+}
+
+.sun-counter__title {
+    font-size: 24px;
+    position: relative;
+    bottom: -80px;
+    left: -50px;
+}
+
+.sun-project__button {
+    padding-bottom: 100px;
+}
+
+.sun-project__button a {
+    text-decoration: none;
+}
+
+.sun-project__button .sun-button {
+    display: block;
+    width: 406px;
+    max-width: 100%;
+    
+}
+
+.sun-project__button .sun-project__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    border-radius: 50%;
     display: inline-block;
-} */
+    background-color: rgba(255, 255, 255, .1);
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    top: -1px;
+}
 
+/* Cơ hội nghề nghiệp */
+.sun-career {
+    position: relative;
+    text-align: center; 
+    border-radius: 16px;;
+}
+
+.sun-career::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(192, 17, 17, 0.8);
+    z-index: 0;
+    border-radius: 16px;
+}
+
+.sun-career__content > div {
+    position: relative;
+    z-index: 1;
+}
+
+.sun-career__content{
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+
+
+.sun-career__sub-title {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 100px;
+    align-items: center;
+    position: relative;
+    
+}
+
+.sun-career__sub-title::before {
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #d82329;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.sun-career__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.sun-career__description {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.sun-career__sub-description {
+    font-size: 24px; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sun-career__button {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sun-career__button a {
+    text-decoration: none;
+}
+
+.sun-career__button .sun-button {
+    display: block;
+    width: 406px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sun-button--bg-white {
+    background-color: #fff;
+    color: #c01111;
+}
+
+.sun-career__button .sun-career__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(192,17,17,.1);
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    top: -1px;
+}
+
+.fa-solid {
+    font-size: 14px;
+}
 /* Môi trường làm việc */
 
 .sun-env {
@@ -301,6 +495,7 @@ main {
 
 .sun-env-column {
     width: 50%;
+    margin-right: 20px;
 }
 .sun-env-list {
 
@@ -311,6 +506,7 @@ main {
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .sun-env-list li {
@@ -346,33 +542,44 @@ main {
     align-items: center;
 }
 .sun-env-img {
+    position: relative;
+    overflow: hidden;
+    margin-top: 65px;
+    
 }
 
 .sun-env-img img{
     width: 100%;
     height: auto;
-    z-index: 0;
 }
 
-.sun-env-img a {
+.sun-env__btn {
+    position: absolute;
+    z-index: 1;
+    bottom: 48px;
+    left: 48px;
+    right: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    
 }
 
-.sun-event {
-    display: inline-flex;
-    list-style: none;
-    justify-content: space-between;
+.sun-env__icon {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 12px;
+
 }
 
-.sun-event-content {
-    display: block;
 
-}
 
-.sun-event-content img {
-    
-}
 
 
 
@@ -445,13 +652,19 @@ footer {
 .footer__infor-column-list-content {
     color: #949ba4;
     font-size: 14px;
-    
 }
+
 .footer__infor-column-list-content-link {
     text-decoration: none;
     color: #949ba4;
     font-size: 14px;
 }
+
+.footer__infor-column-list-content-link:hover {
+    text-decoration: underline;
+    color: #2b3441;
+}
+
 
 .footer__separate {
     height: 0.5px;
