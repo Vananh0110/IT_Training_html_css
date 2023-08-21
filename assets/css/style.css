@@ -272,8 +272,6 @@ section {
     text-align: center;
     position: relative;
     z-index: 1;
-
-
 }
 
 .sun-button::before {
@@ -591,8 +589,7 @@ section {
 .sun-env-img {
     position: relative;
     overflow: hidden;
-    margin-top: 65px;
-    
+    margin-top: 65px;  
 }
 
 .sun-env-img img{
@@ -663,7 +660,7 @@ section {
     display: flex;
     overflow: hidden;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 
@@ -740,6 +737,33 @@ section {
     position: relative;
     top: -1px;
     color: #c01111;
+}
+
+.sun-event__button {
+    margin-bottom: 100px;
+}
+.sun-event__button a {
+    text-decoration: none;
+}
+
+.sun-event__button .sun-button {
+    display: block;
+    width: 406px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sun-event__button .sun-event__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255,.1);
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    top: -1px;
 }
 /* FOOTER */
 footer {

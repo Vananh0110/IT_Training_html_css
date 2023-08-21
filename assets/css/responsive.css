@@ -1,5 +1,8 @@
 /* PC */
 @media (min-width: 1024px) {
+    .navbar__menu-toggle-button {
+        display: none;
+    }
 
 }
 
@@ -10,7 +13,166 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+/* Navbar */
+.navbar__container {
+    padding: 24px 15px;
+    max-width: 740px;
+    margin: auto; 
+}
 
+/* Main */
+.main-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.section {
+    margin-top: 20px;
+}
+/* Lĩnh vực kinh doanh */
+.sun-intro {
+    display: block;
+}
+
+.sun-intro__description {
+    width: auto;
+    font-size: 14px;
+    padding: 20px 50px;
+}
+
+.sun-intro__img {
+    margin: 0 0;
+}
+
+.sun-business li:first-child {
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.sun-business ul {
+    flex-direction: column;
+}
+.sun-business li {
+    width: 100%;
+}
+
+.sun-business__title {
+    font-size: 20px;
+}
+
+.sun-business__description {
+    font-size: 14px;
+}
+
+.sun-button--size-large {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+
+
+/* Dự án */
+.sun-project__counter {
+    margin-top: 0;
+}
+
+.sun-counter__number-complete {
+    font-size: 65px;
+}
+
+.sun-counter__label {
+    font-size: 36px;
+}
+
+.sun-counter__title {
+    font-size: 16px;
+}
+
+.sun-project__button .sun-button {
+    width: 320px;
+}
+
+/* Cơ hội nghề nghiệp */
+.sun-career__sub-title {
+    font-size: 16px;
+}
+
+.sun-career__title {
+    font-size: 32px;
+}
+
+.sun-career__description {
+    font-size: 18px;
+}
+
+.sun-career__sub-description {
+    font-size: 14px;
+}
+
+/* Môi trường làm việc */
+
+.sun-env {
+    display: block;
+}
+
+.sun-env-column {
+    width: auto;
+    margin-right: 0;
+}
+
+.sun-env-list li {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.sun-env-list__icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 6px solid #f9f9f9;
+    margin-right: 27px;
+}
+
+.fa-check {
+    color: #c01111;
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    top: -10px;
+    right: -5px;
+}
+
+.sun-env-img {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;  
+}
+
+/* Văn hóa - Sự kiện */
+.event-top__button {
+    margin-right: 10px;
+}
+
+.event-top__button .event-top__icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #949ba41a;
+    line-height: 18px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-top__button i {
+    font-size: 18px;
+    padding-top: 8px;
+    color: #949ba4;
+
+}
 /* FOOTER */
 
 .footer__container {
@@ -41,8 +203,41 @@
     margin-bottom: 40px;
 }
 
+.footer__infor-column--nolink {
+    max-width: fit-content;
+}
+
+.footer__infor-column-title {
+    font-size: 15px;
+}
+
 .footer__bottom {
     display: block;
 }
+
+.footer__bottom-logo {  
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__bottom-infor {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.footer__bottom-infor-content {
+    max-width: 740px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer__bottom-itemlink {
+    display: block;
+    margin-left: 0;
+}
+
+
+
 
 }
