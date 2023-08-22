@@ -112,7 +112,6 @@ body {
 
 .main {
     padding-top: 60px; 
-
   }
   
   .main-video-container {
@@ -818,10 +817,10 @@ footer {
 
 }
 
-.footer__infor-column--nolink {
-    width: 580px;
-    margin-right: 0;
-}
+    .footer__infor-column--nolink {
+        width: 580px;
+        margin-right: 0;
+    }
 
 .footer__infor-column-title {
     font-size: 18px;
@@ -890,7 +889,6 @@ footer {
     flex-direction: column;
     margin-left: 50px;
     margin-right: 300px;
-
 }
 
 .footer__bottom-infor-content {
