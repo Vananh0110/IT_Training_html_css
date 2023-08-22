@@ -297,6 +297,9 @@ section {
 
 }
 
+.sun-button--bg-black:before {
+    background: #c01111;
+}
 .sun-button--round-large {
     border-radius: 8px;
 }
@@ -748,7 +751,7 @@ section {
 
 .sun-event__button .sun-button {
     display: block;
-    width: 406px;
+    width: 366px;
     max-width: 100%;
     margin: 0 auto;
 }
